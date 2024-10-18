@@ -13,7 +13,6 @@ let nand2 (a : bool) (b : bool) : bool =
 else ture
 
 (*Soluzione 3*)
-
 let nand3 (a : bool) (b : bool) : bool =
   match(a,b) with
   | (true, true) -> false
