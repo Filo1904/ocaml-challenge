@@ -15,6 +15,6 @@ else ture
 (*Soluzione 3*)
 
 let nand3 (a : bool) (b : bool) : bool =
-  match(a,b) whit
-  | (true, true) -> false 
+  match(a,b) with
+  | (true, true) -> false
   | _ -> true
