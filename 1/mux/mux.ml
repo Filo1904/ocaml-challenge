@@ -1,5 +1,5 @@
 (*Soluzione 1*)
-let mux1 (a : bool) (b : bool) (s0 : bool) : bool = 
+let mux1 (a : bool) (b : bool) (s0 : bool) : bool = (a && s0) || (b && not s0)
 
 (*Soluzioen 2*)
 let mux2 (a : bool) (b : bool) (s0 : bool) : bool =
@@ -11,11 +11,11 @@ let mux2 (a : bool) (b : bool) (s0 : bool) : bool =
     )else(
       if b
         then true
-    else false
+        else false
     )
 
 (*Soluzione 3*)
 let mux3 (a : bool) (b : bool) (s0 : bool) : bool =
   match (a, b, s0) with
   | (a, _, true) -> a
-  | (b, _, false) -> b
+  | (_, b, false) -> b
